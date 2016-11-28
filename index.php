@@ -5,6 +5,7 @@
 </head>
 <body>
   <?php include 'html/home.html' ?>
+  <?php include 'html/about.html' ?>
   <?php include 'html/scripts.html' ?>
 </body>
 </html>
