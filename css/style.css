@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700,400");
 body {
   overflow-x: hidden; }
 
@@ -183,8 +183,199 @@ body {
 
 .about {
   width: 100%;
-  height: 100vh;
   margin-top: -5vh;
-  border-top: 5vh solid black; }
+  border-top: 5vh solid black;
+  text-align: center; }
+  .about h2 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 30px; }
+  .about .headline {
+    display: inline-block;
+    background: url(../img/banner.svg);
+    background-position: center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    padding: 5px;
+    position: relative;
+    z-index: 20;
+    font-size: 18px;
+    color: black;
+    width: 150px;
+    color: black; }
+    .about .headline .blockleft {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid white; }
+  .about > img {
+    display: block;
+    border-radius: 50%;
+    border: 6px #3d44c4 solid;
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: -20px;
+    z-index: 1;
+    position: relative; }
+  .about > p {
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 20px; }
+  .about .skillbanner {
+    z-index: 2;
+    width: 100%;
+    background: #3d44c4;
+    position: relative;
+    box-shadow: 0 0 30px 0 black;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin-bottom: 20px; }
+    .about .skillbanner .images {
+      display: inline-block;
+      -webkit-box-pack: distribute;
+      -moz-box-pack: distribute;
+      box-pack: distribute;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+      -ms-flex-pack: distribute;
+      height: 70px; }
+      .about .skillbanner .images .skill {
+        height: 100%;
+        flex-grow: 1;
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 120px;
+        position: relative; }
+        .about .skillbanner .images .skill p {
+          position: absolute;
+          top: 105%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+          font-family: "Open Sans", Arial, sans-serif;
+          color: #131b28; }
+      .about .skillbanner .images #html5 {
+        background-image: url(../img/skills/html5.svg); }
+      .about .skillbanner .images #css3 {
+        background-image: url(../img/skills/css3.svg); }
+      .about .skillbanner .images #jquery {
+        background-image: url(../img/skills/jquery.svg); }
+      .about .skillbanner .images #js {
+        background-image: url(../img/skills/javascript.svg); }
+      .about .skillbanner .images #node {
+        background-image: url(../img/skills/node.svg); }
+      .about .skillbanner .images #php {
+        background-image: url(../img/skills/php.svg); }
+      .about .skillbanner .images #wordpress {
+        background-image: url(../img/skills/wordpress.svg); }
+      .about .skillbanner .images::after {
+        display: table;
+        content: "";
+        clear: both; }
+
+.work {
+  width: 100%;
+  text-align: center; }
+  .work h2 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 30px; }
+  .work .carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px; }
+    .work .carousel .imgcontainer {
+      position: absolute;
+      height: 200px;
+      width: 400px;
+      box-shadow: 0px 2px 10px 0px black; }
+      .work .carousel .imgcontainer:hover .overlay {
+        visibility: visible; }
+      .work .carousel .imgcontainer .overlay {
+        visibility: hidden;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.85);
+        height: 100%;
+        width: 100%;
+        margin-bottom: -200px;
+        position: relative; }
+        .work .carousel .imgcontainer .overlay p {
+          display: none;
+          position: absolute;
+          color: white;
+          font-family: "Raleway", Arial, sans-serif;
+          font-size: 50px;
+          left: 50%;
+          top: 20%;
+          transform: translate(-50%, -50%);
+          text-align: center; }
+        .work .carousel .imgcontainer .overlay button {
+          display: none;
+          position: absolute;
+          color: white;
+          background: #cb2121;
+          outline: none;
+          border: none;
+          font-size: 30px;
+          padding: 10px 20px;
+          left: 50%;
+          bottom: 5%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          z-index: 20; }
+          .work .carousel .imgcontainer .overlay button:hover {
+            background-color: #dc2929; }
+          .work .carousel .imgcontainer .overlay button:active {
+            background-color: #b51d1d; }
+      .work .carousel .imgcontainer img {
+        height: 100%;
+        width: 100%; }
+    .work .carousel .leftImg {
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer; }
+    .work .carousel .rightImg {
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+      cursor: pointer; }
+    .work .carousel .midImg {
+      height: 400px;
+      width: 700px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .work .carousel .midImg .overlay {
+        margin-bottom: -400px; }
+      .work .carousel .midImg:hover p, .work .carousel .midImg:hover button {
+        display: block; }
+  .work p {
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

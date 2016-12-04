@@ -39,3 +39,15 @@ function openMenu()
     });
   }
 }
+function moveCarousel()
+{
+  if ($(this).hasClass('leftImg'))
+  {
+    //Move the carousel right.
+    
+  }
+  else
+  {
+    //Move the carousel left.
+  }
+}

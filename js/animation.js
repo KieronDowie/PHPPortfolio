@@ -8,4 +8,6 @@ $(document).ready(function(){
   setInterval(function(){
     resizeH(3,0.1,'em');
   }, 500);
+  //Moving buttons for the carousel
+  $('.leftImg, .rightImg').click(moveCarousel);
 })
