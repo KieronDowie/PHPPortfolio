@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KACA;EACE,KAAK,EAAC,IAAI;EACV,UAAU,EAAC,MAAM",
+"sources": ["../scss/work.scss"],
+"names": [],
+"file": "work.css"
+}
