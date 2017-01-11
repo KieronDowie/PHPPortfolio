@@ -311,6 +311,7 @@ function updateChat(id, callback)
     data:{'id':id},
     success:function(res){
       messages = res;
+      var bottom = atBottom($('#chatbox'));
       $('#chatbox').html('');
       var last = '';
       var prev = undefined;
@@ -352,7 +353,11 @@ function updateChat(id, callback)
         li.text(msg);
         $('#chatbox').append(li);
       }
-      prev.addClass('last');
+      if (prev)
+      {
+       prev.addClass('last');
+      }
+      if (bottom) scrollToBottom();
       if (callback) callback();
     },
     error:function(a,err){
@@ -369,4 +374,21 @@ function sanitize(str)
   str = str.replace(/&/g,'&amp;');
 
   return str;
+}
+function scrollToBottom()
+{
+  var chat = $('#chatbox');
+  var height = $('#chatbox')[0].scrollHeight;
+  chat.scrollTop(height);
+}
+function atBottom(elem)
+{
+  var scrollPos = elem.scrollTop();
+  var scrollHeight = elem[0].scrollHeight;
+  var height = elem.outerHeight();
+  return (scrollPos + height >= scrollHeight);
+}
+function openLink(link)
+{
+  window.open(link);
 }
