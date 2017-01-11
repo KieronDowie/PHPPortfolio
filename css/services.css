@@ -1,0 +1,32 @@
+.services {
+  text-align: center; }
+  .services h2 {
+    /*font-family: $h2font;*/
+    font-size: 30px; }
+  .services .option {
+    width: 80%;
+    margin: 0 auto; }
+    .services .option .optionimgcontainer {
+      width: 25%;
+      height: 100px;
+      margin-top: 25px;
+      float: left;
+      position: relative; }
+      .services .option .optionimgcontainer img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .services .option .infocontainer {
+      float: left;
+      padding: 0;
+      margin: 0;
+      width: 70%;
+      text-align: center; }
+    .services .option:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+/*# sourceMappingURL=services.css.map */
