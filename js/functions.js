@@ -219,6 +219,7 @@ function getCookie(cname) {
 }
 function getId()
 {
+  console.log('test');
   var id;
   if (getCookie('id') != '')
   {
@@ -247,6 +248,17 @@ function startChat(id)
   openChat();
   updateChat(id);
   loadMessages();
+}
+function loadIds(callback)
+{
+  $.ajax({
+    url: "getallids.php",
+    type:'post',
+    data:{},
+    success:function(res){
+      callback(res);
+    }
+  });
 }
 function loadMessages()
 {
@@ -391,4 +403,9 @@ function atBottom(elem)
 function openLink(link)
 {
   window.open(link);
+}
+if (getCookie('id') != '')
+{
+  console.log('adsf');
+  startChat();
 }

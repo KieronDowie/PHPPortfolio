@@ -1,0 +1,18 @@
+.realtimechat {
+  display: block;
+  position: relative;
+  height: 300px;
+  float: left;
+  margin: 10px; }
+  .realtimechat p {
+    margin: 0;
+    padding: 0; }
+  .realtimechat #chatbox {
+    border: 0px transparent solid;
+    overflow: auto;
+    margin: 5px 0;
+    padding: 0; }
+  .realtimechat input {
+    margin-bottom: 8px; }
+
+/*# sourceMappingURL=master.css.map */
