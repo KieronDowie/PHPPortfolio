@@ -331,6 +331,9 @@ body {
           top: 20%;
           transform: translate(-50%, -50%);
           text-align: center; }
+        .work .carousel .imgcontainer .overlay .hidden {
+          display: none;
+          visibility: hidden; }
         .work .carousel .imgcontainer .overlay button {
           display: none;
           position: absolute;
@@ -380,7 +383,8 @@ body {
     margin: 0 auto;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 18px;
-    text-align: left;
+    text-align: center;
+    margin-top: 35px;
     padding-bottom: 20px; }
 
 .services {

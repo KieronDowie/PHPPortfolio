@@ -56,6 +56,10 @@ function openMenu()
     });
   }
 }
+function showWorkInfo(info)
+{
+  $('#workinfo').html(info);
+}
 var moving = 0;
 function moveCarousel()
 {
@@ -64,6 +68,7 @@ function moveCarousel()
     moving = 4;
     if ($(this).hasClass('leftImg'))
     {
+      var info = $('.leftImg .hidden')[0].innerHTML;
       //Move the carousel right.
       //Make right block disappear.
       $('.rightImg').animate({
@@ -123,6 +128,7 @@ function moveCarousel()
     }
     else
     {
+      var info = $('.rightImg .hidden')[0].innerHTML;
       //Move the carousel left.
       //Make left block disappear, move it to the end of the blocks.
       $('.leftImg').animate({
@@ -181,6 +187,7 @@ function moveCarousel()
       });
     }
   }
+  showWorkInfo(info);
 }
 function sendMessage(id,message)
 {
@@ -219,7 +226,6 @@ function getCookie(cname) {
 }
 function getId()
 {
-  console.log('test');
   var id;
   if (getCookie('id') != '')
   {
@@ -274,6 +280,17 @@ function showChat()
     chat = $('<div>');
     chat.addClass('realtimechat');
     var header = $('<header>');
+    header.click(function(){
+      if ($('.realtimechat').hasClass('open'))
+      {
+        $('.realtimechat').animate({height:'30px'});
+        $('.realtimechat').removeClass('open');
+      }
+      else
+      {
+        openChat();
+      }
+    });
     header.html('<p>Chat Window</p>');
     var chatpart = $('<ul id="chatbox">');
     var input = $('<input id="chatin">');
@@ -292,13 +309,13 @@ function showChat()
 function openChat()
 {
   $('.realtimechat').animate({height: '300px'});
+  $('.realtimechat').addClass('open');
 }
 function chatEnter()
 {
   var msg = $('#chatin').val();
   $('#chatin').val('');
   sendMessage(msg,function(res){
-    console.log(res);
     
   });
   console.log('sent');
@@ -406,6 +423,8 @@ function openLink(link)
 }
 if (getCookie('id') != '')
 {
-  console.log('adsf');
   startChat();
 }
+$(document).ready(function(){
+  showWorkInfo($('.midImg .hidden')[0].innerHTML);
+});
