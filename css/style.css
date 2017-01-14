@@ -4,16 +4,16 @@
 body {
   overflow-x: hidden; }
 
-.home {
+#home {
   background: -webkit-linear-gradient(#ff8e01, #febc01);
   background: linear-gradient(#ff8e01, #febc01);
   background-size: 100% 100%;
   width: 100%;
   height: 100vh; }
   @media (max-width: 600px) {
-    .home header nav .menuHidden {
+    #home header nav .menuHidden {
       display: none; } }
-  .home header nav .list {
+  #home header nav .list {
     position: relative;
     z-index: 100;
     display: none;
@@ -23,11 +23,11 @@ body {
     fill: black;
     cursor: pointer; }
     @media (max-width: 600px) {
-      .home header nav .list {
+      #home header nav .list {
         display: block; }
-        .home header nav .list:hover {
+        #home header nav .list:hover {
           fill: #3d44c4; } }
-  .home header nav ul {
+  #home header nav ul {
     list-style-type: none;
     float: right;
     padding-top: 20px;
@@ -39,14 +39,14 @@ body {
     display: -ms-flexbox;
     display: flex; }
     @media (max-width: 600px) {
-      .home header nav ul {
+      #home header nav ul {
         display: block;
         position: absolute;
         width: 100%;
         height: 100%;
         padding: 0;
         top: -100%; } }
-    .home header nav ul li {
+    #home header nav ul li {
       padding-right: 3em;
       font-weight: bold;
       font-family: sans-serif;
@@ -55,20 +55,20 @@ body {
       font-size: 1.2em;
       font-family: "Open Sans", Arial, sans-serif; }
       @media (max-width: 600px) {
-        .home header nav ul li {
+        #home header nav ul li {
           width: 100%;
           height: 20%;
           background: white;
           position: relative;
           z-index: 10;
           padding: 0; } }
-      .home header nav ul li a {
+      #home header nav ul li a {
         color: black;
         text-decoration: none; }
-        .home header nav ul li a:hover {
+        #home header nav ul li a:hover {
           color: #3d44c4; }
         @media (max-width: 600px) {
-          .home header nav ul li a {
+          #home header nav ul li a {
             position: absolute;
             top: 50%;
             -webkit-transform: translate(-50%, -50%);
@@ -76,52 +76,52 @@ body {
             -ms-transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); } }
-  .home header nav::after {
+  #home header nav::after {
     display: table;
     content: "";
     clear: both; }
-  .home h1 {
+  #home h1 {
     z-index: 2;
     text-align: center;
     margin-top: 3em; }
     @media (max-height: 500px) {
-      .home h1 {
+      #home h1 {
         margin-top: 0.5em; } }
-    .home h1 .h1container {
+    #home h1 .h1container {
       display: inline-block; }
-      .home h1 .h1container span:first-child {
+      #home h1 .h1container span:first-child {
         color: #3d44c4;
         font-family: "Raleway", Arial, sans-serif;
         font-weight: 300; }
-      .home h1 .h1container span {
+      #home h1 .h1container span {
         display: block;
         float: left;
         padding: 0;
         margin: 0;
         font-family: "Rubik", Arial, sans-serif; }
-  .home .foreground {
+  #home .foreground {
     position: absolute;
     top: 40vh;
     height: 60vh;
     width: 100%;
     z-index: 2; }
     @media (max-height: 800px) and (max-width: 900px) {
-      .home .foreground {
+      #home .foreground {
         top: 50vh;
         height: 50vh; } }
     @media (max-height: 600px) and (max-width: 900px) {
-      .home .foreground {
+      #home .foreground {
         top: 60vh;
         height: 40vh; } }
     @media (max-height: 400px) and (max-width: 1100px) {
-      .home .foreground {
+      #home .foreground {
         top: 70vh;
         height: 30vh; } }
     @media (max-height: 400px) and (max-width: 600px) {
-      .home .foreground {
+      #home .foreground {
         top: 80vh;
         height: 20vh; } }
-    .home .foreground .people1, .home .foreground .people2 {
+    #home .foreground .people1, #home .foreground .people2 {
       background: url("../img/people1.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -129,12 +129,12 @@ body {
       height: 100%;
       width: 50%;
       float: left; }
-    .home .foreground .people2 {
+    #home .foreground .people2 {
       background: url("../img/people2.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center bottom; }
-  .home .poles {
+  #home .poles {
     position: absolute;
     top: 70vh;
     height: 30vh;
@@ -143,26 +143,26 @@ body {
     background-size: contain;
     background-repeat: repeat-x; }
     @media (max-height: 800px) and (max-width: 900px) {
-      .home .poles {
+      #home .poles {
         top: 75vh;
         height: 25vh; } }
     @media (max-height: 600px) and (max-width: 900px) {
-      .home .poles {
+      #home .poles {
         top: 80vh;
         height: 20vh; } }
     @media (max-height: 400px) and (max-width: 1100px) {
-      .home .poles {
+      #home .poles {
         top: 85vh;
         height: 15vh; } }
     @media (max-height: 400px) and (max-width: 600px) {
-      .home .poles {
+      #home .poles {
         top: 90vh;
         height: 10vh; } }
     @media (max-width: 400px) {
-      .home .poles {
+      #home .poles {
         top: 80vh;
         height: 20vh; } }
-  .home h2 {
+  #home h2 {
     text-align: center;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 1.2em;
@@ -172,7 +172,7 @@ body {
     font-weight: bold;
     z-index: 2;
     position: relative; }
-  .home .bird {
+  #home .bird {
     background: url(../img/bird.png);
     height: 50px;
     width: 50px;
@@ -181,16 +181,16 @@ body {
     background-position: center center;
     background-repeat: no-repeat; }
 
-.about {
+#about {
   width: 100%;
   margin-top: -5vh;
   border-top: 5vh solid black;
   text-align: center;
   margin-bottom: 10vh; }
-  .about h2 {
+  #about h2 {
     font-family: "Raleway", Arial, sans-serif;
     font-size: 30px; }
-  .about .headline {
+  #about .headline {
     display: inline-block;
     background: url(../img/banner.svg);
     background-position: center center;
@@ -204,7 +204,7 @@ body {
     color: black;
     width: 150px;
     color: black; }
-    .about .headline .blockleft {
+    #about .headline .blockleft {
       position: absolute;
       left: 0;
       top: 0;
@@ -214,7 +214,7 @@ body {
       border-top: 15px solid transparent;
       border-bottom: 15px solid transparent;
       border-left: 15px solid white; }
-  .about > img {
+  #about > img {
     display: block;
     border-radius: 50%;
     border: 6px #3d44c4 solid;
@@ -227,14 +227,14 @@ body {
     margin-bottom: -20px;
     z-index: 1;
     position: relative; }
-  .about > p {
+  #about > p {
     width: 70%;
     margin: 0 auto;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 18px;
     text-align: left;
     padding-bottom: 20px; }
-  .about .skillbanner {
+  #about .skillbanner {
     z-index: 2;
     width: 100%;
     background: #3d44c4;
@@ -243,7 +243,7 @@ body {
     text-align: center;
     padding: 20px 0 30px 0;
     margin-bottom: 10vh; }
-    .about .skillbanner .images {
+    #about .skillbanner .images {
       display: inline-block;
       -webkit-box-pack: distribute;
       -moz-box-pack: distribute;
@@ -255,7 +255,7 @@ body {
       justify-content: space-around;
       -ms-flex-pack: distribute;
       height: 70px; }
-      .about .skillbanner .images .skill {
+      #about .skillbanner .images .skill {
         height: 100%;
         flex-grow: 1;
         background-position: center center;
@@ -264,7 +264,7 @@ body {
         display: inline-block;
         width: 120px;
         position: relative; }
-        .about .skillbanner .images .skill p {
+        #about .skillbanner .images .skill p {
           position: absolute;
           top: 105%;
           left: 50%;
@@ -275,45 +275,45 @@ body {
           transform: translateX(-50%);
           font-family: "Open Sans", Arial, sans-serif;
           color: #131b28; }
-      .about .skillbanner .images #html5 {
+      #about .skillbanner .images #html5 {
         background-image: url(../img/skills/html5.svg); }
-      .about .skillbanner .images #css3 {
+      #about .skillbanner .images #css3 {
         background-image: url(../img/skills/css3.svg); }
-      .about .skillbanner .images #jquery {
+      #about .skillbanner .images #jquery {
         background-image: url(../img/skills/jquery.svg); }
-      .about .skillbanner .images #js {
+      #about .skillbanner .images #js {
         background-image: url(../img/skills/javascript.svg); }
-      .about .skillbanner .images #node {
+      #about .skillbanner .images #node {
         background-image: url(../img/skills/node.svg); }
-      .about .skillbanner .images #php {
+      #about .skillbanner .images #php {
         background-image: url(../img/skills/php.svg); }
-      .about .skillbanner .images #wordpress {
+      #about .skillbanner .images #wordpress {
         background-image: url(../img/skills/wordpress.svg); }
-      .about .skillbanner .images::after {
+      #about .skillbanner .images::after {
         display: table;
         content: "";
         clear: both; }
 
-.work {
+#work {
   width: 100%;
   text-align: center; }
-  .work h2 {
+  #work h2 {
     font-family: "Raleway", Arial, sans-serif;
     font-size: 30px; }
-  .work .carousel {
+  #work .carousel {
     position: relative;
     width: 100%;
     height: 400px;
     margin-bottom: 20px; }
-    .work .carousel .imgcontainer {
+    #work .carousel .imgcontainer {
       display: none;
       position: absolute;
       height: 200px;
       width: 400px;
       box-shadow: 0px 2px 10px 0px black; }
-      .work .carousel .imgcontainer:hover .overlay {
+      #work .carousel .imgcontainer:hover .overlay {
         visibility: visible; }
-      .work .carousel .imgcontainer .overlay {
+      #work .carousel .imgcontainer .overlay {
         visibility: hidden;
         z-index: 2;
         background: rgba(0, 0, 0, 0.85);
@@ -321,7 +321,7 @@ body {
         width: 100%;
         margin-bottom: -200px;
         position: relative; }
-        .work .carousel .imgcontainer .overlay p {
+        #work .carousel .imgcontainer .overlay p {
           display: none;
           position: absolute;
           color: white;
@@ -331,10 +331,10 @@ body {
           top: 20%;
           transform: translate(-50%, -50%);
           text-align: center; }
-        .work .carousel .imgcontainer .overlay .hidden {
+        #work .carousel .imgcontainer .overlay .hidden {
           display: none;
           visibility: hidden; }
-        .work .carousel .imgcontainer .overlay button {
+        #work .carousel .imgcontainer .overlay button {
           display: none;
           position: absolute;
           color: white;
@@ -348,37 +348,37 @@ body {
           transform: translate(-50%, -50%);
           text-align: center;
           z-index: 20; }
-          .work .carousel .imgcontainer .overlay button:hover {
+          #work .carousel .imgcontainer .overlay button:hover {
             background-color: #dc2929; }
-          .work .carousel .imgcontainer .overlay button:active {
+          #work .carousel .imgcontainer .overlay button:active {
             background-color: #b51d1d; }
-      .work .carousel .imgcontainer img {
+      #work .carousel .imgcontainer img {
         height: 100%;
         width: 100%; }
-    .work .carousel .leftImg {
+    #work .carousel .leftImg {
       display: block;
       left: 0;
       top: 50%;
       transform: translate(-50%, -50%);
       cursor: pointer; }
-    .work .carousel .rightImg {
+    #work .carousel .rightImg {
       display: block;
       right: 0;
       top: 50%;
       transform: translate(50%, -50%);
       cursor: pointer; }
-    .work .carousel .midImg {
+    #work .carousel .midImg {
       display: block;
       height: 400px;
       width: 700px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-      .work .carousel .midImg .overlay {
+      #work .carousel .midImg .overlay {
         margin-bottom: -400px; }
-      .work .carousel .midImg:hover p, .work .carousel .midImg:hover button {
+      #work .carousel .midImg:hover p, #work .carousel .midImg:hover button {
         display: block; }
-  .work p {
+  #work p {
     width: 70%;
     margin: 0 auto;
     font-family: "Open Sans", Arial, sans-serif;
@@ -387,44 +387,44 @@ body {
     margin-top: 35px;
     padding-bottom: 20px; }
 
-.services {
+#services {
   text-align: center; }
-  .services h2 {
+  #services h2 {
     /*font-family: $h2font;*/
     font-size: 30px; }
-  .services .option {
+  #services .option {
     width: 80%;
     margin: 0 auto; }
-    .services .option .optionimgcontainer {
+    #services .option .optionimgcontainer {
       width: 25%;
       height: 100px;
       margin-top: 25px;
       float: left;
       position: relative; }
-      .services .option .optionimgcontainer img {
+      #services .option .optionimgcontainer img {
         display: block;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-    .services .option .infocontainer {
+    #services .option .infocontainer {
       float: left;
       padding: 0;
       margin: 0;
       width: 70%;
       text-align: center; }
-    .services .option:after {
+    #services .option:after {
       content: "";
       display: table;
       clear: both; }
 
-.contact {
+#contact {
   margin-top: 30px;
   background: #3d44c4;
   height: 100vh;
   text-align: center;
   position: relative; }
-  .contact button {
+  #contact button {
     background: #C00B0B;
     border-radius: 10px;
     height: 50px;
@@ -434,27 +434,27 @@ body {
     outline: none;
     border: none;
     margin-bottom: 20px; }
-    .contact button:hover {
+    #contact button:hover {
       background: #d80c0c; }
-    .contact button:active {
+    #contact button:active {
       background: #a80a0a; }
-  .contact h4 {
+  #contact h4 {
     margin-top: 0;
     padding-top: 0;
     font-size: 40px;
     color: white;
     font-family: Arial; }
-  .contact .social {
+  #contact .social {
     list-style-type: none;
     width: 90%;
     height: 50%;
     margin: 0 auto; }
-    .contact .social li {
+    #contact .social li {
       float: left;
       position: relative;
       height: 100%;
       width: 33%; }
-      .contact .social li .bubble {
+      #contact .social li .bubble {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -465,19 +465,19 @@ body {
         background: white;
         background-size: cover;
         cursor: pointer; }
-      .contact .social li #linkedin {
+      #contact .social li #linkedin {
         background-image: url("../img/linkedin.jpg"); }
-      .contact .social li #twitter {
+      #contact .social li #twitter {
         background-image: url("../img/twitter.png"); }
-      .contact .social li #github {
+      #contact .social li #github {
         background-image: url("../img/github.jpg"); }
-  .contact p {
+  #contact p {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -100%);
     color: white; }
-    .contact p a {
+    #contact p a {
       color: #089BE7; }
 
 .realtimechat {

@@ -2,7 +2,7 @@
 Error: Undefined variable: "$accent".
         on line 4 of scss/contact.scss
 
-1: .contact
+1: #contact
 2: {
 3: 	margin-top:30px;
 4: 	background:$accent;
@@ -63,4 +63,4 @@ C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$accent\".\A         on line 4 of scss/contact.scss\A \A 1: .contact\A 2: {\A 3: 	margin-top:30px;\A 4: 	background:$accent;\A 5: 	height:100vh;\A 6: 	text-align:center;\A 7: 	position:relative;\A 8: 	button\A 9: 	{"; }
+  content: "Error: Undefined variable: \"$accent\".\A         on line 4 of scss/contact.scss\A \A 1: #contact\A 2: {\A 3: 	margin-top:30px;\A 4: 	background:$accent;\A 5: 	height:100vh;\A 6: 	text-align:center;\A 7: 	position:relative;\A 8: 	button\A 9: 	{"; }

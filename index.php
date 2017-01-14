@@ -29,31 +29,31 @@
       ]
     ];
     $services = [
-      "one" => [
-          "name" => "Service Name",
-          "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe adipisci accusamus, ex error nostrum quasi. Perspiciatis tempora ipsa suscipit ducimus eaque, tempore sint eum totam blanditiis eligendi? Fugit, pariatur.",
-          "img" => "./img/services/placehold.png"
+      "Website Creation" => [
+          "name" => "Website Creation",
+          "text" => "My primary skillset. I can take a website idea from design phase to completion using HTML, CSS, Javascript and any other required tools or frameworks.",
+          "img" => "./img/services/web.png"
       ],
-      "two" => [
-          "name" => "Service Name",
-          "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe adipisci accusamus, ex error nostrum quasi. Perspiciatis tempora ipsa suscipit ducimus eaque, tempore sint eum totam blanditiis eligendi? Fugit, pariatur.",
-          "img" => "./img/services/placehold.png"
+      "Web Design" => [
+          "name" => "Web Design",
+          "text" => "I can create website mockups using Photoshop or Gimp, to be converted later into an actual website.",
+          "img" => "./img/services/design.png"
       ],
-      "test2" => [
-          "name" => "Service Name",
-          "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe adipisci accusamus, ex error nostrum quasi. Perspiciatis tempora ipsa suscipit ducimus eaque, tempore sint eum totam blanditiis eligendi? Fugit, pariatur.",
-          "img" => "./img/services/placehold.png"
+      "Wordpress" => [
+          "name" => "Wordpress",
+          "text" => "Have a mockup of a website? I can take it and turn it into a working and polished Wordpress site.",
+          "img" => "./img/services/wordpress.png"
       ],
-      "test3" => [
-          "name" => "Service Name",
-          "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe adipisci accusamus, ex error nostrum quasi. Perspiciatis tempora ipsa suscipit ducimus eaque, tempore sint eum totam blanditiis eligendi? Fugit, pariatur.",
-          "img" => "./img/services/placehold.png"
+      "Web Scraping" => [
+          "name" => "Web Scraping",
+          "text" => "I can write programs to scrape the web for you and retrieve large quantities of useful data for business purposes.",
+          "img" => "./img/services/scraper.png"
       ],
-      "test1" => [
-          "name" => "Service Name",
-          "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe adipisci accusamus, ex error nostrum quasi. Perspiciatis tempora ipsa suscipit ducimus eaque, tempore sint eum totam blanditiis eligendi? Fugit, pariatur.",
-          "img" => "./img/services/placehold.png"
-      ]
+      "Firefox and Chrome plugins" => [
+          "name" => "Firefox and Chrome plugins",
+          "text" => "Have a plugin idea, or just want to automate a menial task you need to do every day? I can write a Chrome or Firefox plugin of your choice.",
+          "img" => "./img/services/plugin.png"
+      ],
     ];
   ?>
   <?php include 'html/head.html' ?>

@@ -1,4 +1,4 @@
-<section class="work">
+<section id="work">
   <h2>My Work</h2>
   <div class="carousel">
     <?php
